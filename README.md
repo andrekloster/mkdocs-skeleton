@@ -18,6 +18,6 @@ docker run -d -p 8080:8080 docker_skeleton_test
 ```
 
 * Mkdocs im Browser aufrufen
-'''
+```
 http://<EXTERNE-DOCKERHOST-IP>:8080
-'''
+```
