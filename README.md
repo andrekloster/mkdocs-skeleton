@@ -14,7 +14,7 @@ docker build -t mkdocs_skeleton_test .
 
 * Docker Container starten
 ```
-docker run -d -p 8080:8080 docker_skeleton_test
+docker run -d -p 8080:8080 mkdocs_skeleton_test
 ```
 
 * Mkdocs im Browser aufrufen
