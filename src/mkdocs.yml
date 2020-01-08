@@ -22,5 +22,5 @@ markdown_extensions:
 
 nav:
     - Home: 'index.md'
-    - Server:
+    - Section:
         - Test: 'server/test.md'
