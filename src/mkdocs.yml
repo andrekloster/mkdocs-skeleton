@@ -23,4 +23,4 @@ markdown_extensions:
 nav:
     - Home: 'index.md'
     - Section:
-        - Test: 'server/test.md'
+        - Test: 'chapter/test.md'
