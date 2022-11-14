@@ -1,23 +1,31 @@
 # mkdocs_skeleton
 
-* Repository klonen
+![mkdocs_skeleton](./pictures/mkdocs_skeleton.png)
+
+This repository provides you a mkdocs skeleton setup. This setup will install some basic features and will install the [Material Theme](https://squidfunk.github.io/mkdocs-material/).
+There is also a reload feature enabled. Therefore you do not have to rebuild the container after every change.
+
+### Clone repository
 
 ```
 git clone https://github.com/andrekloster/mkdocs_skeleton.git
 cd mkdocs_skeleton
 ```
 
-* Docker Image bauen
+### Start mkdocs through script
+
 ```
-docker build -t mkdocs_skeleton_test .
+./mkdocs.sh start
 ```
 
-* Docker Container starten
+### Stop mkdocs through script
+
 ```
-docker run -d -p 8080:8080 mkdocs_skeleton_test
+./mkdocs.sh stop
 ```
 
-* Mkdocs im Browser aufrufen
+### Open mkdocs inside your browser
+
 ```
-http://<EXTERNE-DOCKERHOST-IP>:8080
+http://EXTERNAL-DOCKERHOST-IP:8080
 ```

@@ -1,26 +1,30 @@
-site_name: Sciurus Doku
-dev_addr: '0.0.0.0:8080'
+site_name: Mkdocs Skeleton
 theme:
-    name: null
-    custom_dir: 'themes/material/'
-    language: de
+    name: 'material'
+    language: en
     palette:
-      primary: indigo
-      accent: indigo
-    font:
-      text: Roboto
-      code: Roboto Mono
-    logo:
-      icon: "\uE80C"
-    feature:
-      tabs: true
-      
+        primary: black
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.expand
+        - navigation.indexes
+    plugins:
+        - search:
+            lang: en
+
 markdown_extensions:
-    - admonition
-    - fenced_code
-    - codehilite
+    - 'admonition'
+    - 'pymdownx.highlight'
+    - 'pymdownx.keys'
+    - 'pymdownx.superfences'
+    - pymdownx.tabbed:
+          alternate_style: true
+    - 'attr_list'
+    - 'md_in_html'
 
 nav:
-    - Home: 'index.md'
-    - Section:
-        - Test: 'chapter/test.md'
+    - Common:
+        - 'index.md'
+    - Demo:
+        - 'demo/index.md'

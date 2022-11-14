@@ -1,0 +1,27 @@
+---
+version: "3.9"
+services:
+  mkdocs:
+    build:
+      context: ./
+      args:
+        UID: ${USER_ID}
+        GID: ${GROUP_ID}
+    working_dir: /mkdocs
+    container_name: mkdocs
+    restart: always
+    user: "${USER_ID}:${GROUP_ID}"
+    command: mkdocs serve -a 0.0.0.0:8080
+    volumes:
+      - ./src:/mkdocs
+    networks:
+      - mkdocs-net
+    ports:
+      - "8080:8080"
+
+networks:
+  mkdocs-net:
+    driver: bridge
+
+volumes:
+  exclude:
