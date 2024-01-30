@@ -7,4 +7,4 @@ RUN pip install mkdocs mkdocs-material
 COPY --chown=${UID}:${GID} ./src /mkdocs
 WORKDIR /mkdocs
 EXPOSE 8080
-CMD ['mkdocs', 'serve']
+CMD ["mkdocs", "serve"]
